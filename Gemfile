@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.0.0"
+ruby "3.3.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -69,3 +69,5 @@ end
 gem "devise", "~> 4.9"
 
 gem "cssbundling-rails", "~> 1.4"
+
+gem 'bunny'

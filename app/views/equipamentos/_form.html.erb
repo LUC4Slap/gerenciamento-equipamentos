@@ -1,0 +1,17 @@
+<%= form_with(model: equipamento) do |form| %>
+  <% if equipamento.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(equipamento.errors.count, "error") %> prohibited this equipamento from being saved:</h2>
+
+      <ul>
+        <% equipamento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
